@@ -1,0 +1,31 @@
+
+#orderListBtn {
+    -fx-background-image: url('/images/kitchen.jpg');
+}
+#createOrderBtn {
+    -fx-background-image: url('/images/floor.jpg');
+}
+#orderListBtn, #createOrderBtn {
+    -fx-background-color: #333;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-min-width: 298;
+    -fx-min-height: 298;
+    -fx-background-position: center;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-opacity: 0.5;
+}
+#orderListBtn .text, #createOrderBtn .text {
+    -fx-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+    -fx-border: 1 solid white;
+}
+#orderListBtn:hover, #createOrderBtn:hover {
+    -fx-opacity: 0.7;
+}
+
+
