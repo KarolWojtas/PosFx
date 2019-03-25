@@ -22,7 +22,7 @@
     -fx-font-size: 20;
     -fx-font-weight: bold;
     -fx-padding: 5;
-    -fx-border: 1 solid white;
+    -fx-border-color: white;
 }
 #orderListBtn:hover, #createOrderBtn:hover {
     -fx-opacity: 0.7;
