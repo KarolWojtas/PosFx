@@ -1,6 +1,7 @@
 package com.karol;
 
 import com.karol.model.SceneCode;
+import com.karol.services.ProductService;
 import com.karol.services.SceneNavigatorService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -19,5 +20,14 @@ public class MainController {
             System.out.println(event.toString());
             SceneNavigatorService.getInstance().go(SceneCode.ORDER_LIST_SCENE);
         });
+        ProductService.getInstance().isComputingMenu()
+            .subscribe(value -> {
+                if(value){
+                    System.out.println("loading");
+                } else {
+                    System.out.println("idle");
+                }
+            });
     }
+
 }

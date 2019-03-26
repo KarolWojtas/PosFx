@@ -8,31 +8,32 @@ public class Drink extends Product {
     private Drink(){
     }
 
-    public static class DrinkBuilder {
+    public static class Builder {
         private Drink drink;
 
-        public DrinkBuilder(){
+        public Builder(){
             this.drink = new Drink();
         }
 
-        public DrinkBuilder price(float price){
+        public Builder productid(ProductId productId){
+            drink.setProductId(productId);
+            return this;
+        }
+
+        public Builder price(float price){
             drink.setPrice(price);
             return this;
         }
-        public DrinkBuilder name(String name){
+        public Builder name(String name){
             drink.setName(name);
             return this;
         }
-        public DrinkBuilder volumeLiters(float volumeLiters){
+        public Builder volumeLiters(float volumeLiters){
             drink.setVolumeLiters(volumeLiters);
             return this;
         }
-        public DrinkBuilder isAlcoholic(boolean isAlcoholic){
+        public Builder isAlcoholic(boolean isAlcoholic){
             drink.setAlcoholic(isAlcoholic);
-            return this;
-        }
-        public DrinkBuilder category(ProductCategory category){
-            drink.setCategory(category);
             return this;
         }
 

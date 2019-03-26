@@ -3,10 +3,9 @@ package com.karol.model;
 import java.util.Random;
 
 public class Product {
-    private Long id = new Random().nextLong();
+    private ProductId productId;
     private Float price;
     private String name;
-    private ProductCategory category;
 
     public Product(){
 
@@ -33,21 +32,20 @@ public class Product {
         this.name = name;
     }
 
-    public ProductCategory getCategory() {
-        return category;
+    public ProductId getProductId() {
+        return productId;
     }
 
-    public void setCategory(ProductCategory category) {
-        this.category = category;
+    public void setProductId(ProductId productId) {
+        this.productId = productId;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + id +
+                "productId=" + productId +
                 ", price=" + price +
                 ", name='" + name + '\'' +
-                ", category=" + category +
                 '}';
     }
 }
