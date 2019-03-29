@@ -2,7 +2,7 @@ package com.karol.model;
 
 public enum SceneCode {
     MAIN_SCENE("/views/main.fxml", "/styles/main_scene.css"),
-    ORDER_LIST_SCENE("/views/order_list.fxml", null),
+    ORDER_LIST_SCENE("/views/orderList.fxml", "/styles/orderList.css"),
     CREATE_ORDER_SCENE("/views/create_order.fxml", null);
 
     private String fxmlResourceUri;

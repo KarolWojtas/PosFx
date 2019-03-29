@@ -18,7 +18,6 @@ public class InitializeMenuTask extends Task<List<Product>> {
     protected List<Product> call() throws Exception {
         List<Product> products = new ArrayList<>();
         Collections.addAll(products, initDrinks());
-        System.out.println(products);
         return products;
     }
 

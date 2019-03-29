@@ -1,0 +1,16 @@
+
+.root {
+    -fx-background-color: #ccc;
+}
+#navRoot {
+    -fx-background-color: #333;
+}
+#contentRoot {
+    -fx-background-color: #eee;
+}
+#scrollRoot {
+    -fx-opacity: 1;
+}
+#orderRoot {
+    -fx-background-color: yellow;
+}

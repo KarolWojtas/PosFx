@@ -39,8 +39,9 @@ public class ProductService {
         isComputingMenu.onNext(true);
         InitializeMenuTask menuTask = new InitializeMenuTask();
         menuTask.setOnSucceeded(event -> {
-            isComputingMenu.onNext(false);
             productList = menuTask.getValue();
+            System.out.println(productList);
+            isComputingMenu.onNext(false);
         });
         // TODO zrobić executor singleton do użycia w całej aplikacji
         ExecutorService executor = Executors.newSingleThreadExecutor();
