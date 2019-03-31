@@ -10,11 +10,11 @@ public class MenuCategoryComponent extends VBox implements Component{
     private VBox view;
     private MainCategoryController controller = new MainCategoryController();
 
-    public MenuCategoryComponent() {
+    public MenuCategoryComponent(String title) {
+        controller.setTitleText(title);
         view  = (VBox) loadViewFromFxml("/views/components/mainCategory.fxml", controller);
         initStandard(this, view);
         view.setAlignment(Pos.CENTER);
         setVgrow(view, Priority.ALWAYS);
-        setPrefHeight(200);
     }
 }

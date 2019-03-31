@@ -39,9 +39,9 @@ public class CreateOrderController implements Controller {
     private VBox summaryListRoot;
     @FXML
     private Button summaryConfirmBtn;
-
     @FXML
     private HBox summaryActionRoot;
+
 
     @Override
     @FXML
@@ -51,7 +51,7 @@ public class CreateOrderController implements Controller {
         summaryActionRoot.getStyleClass().add("navBar");
 
         orderSummaryRoot.prefWidthProperty().bind(contentRoot.widthProperty().multiply(0.3));
-        MenuCategoryComponent testMenuCategory = new MenuCategoryComponent();
+        MenuCategoryComponent testMenuCategory = new MenuCategoryComponent("Kategoria");
         testMenuCategory.getStyleClass().add("menuCategory");
         categoryListRoot.getChildren().add(testMenuCategory);
     }

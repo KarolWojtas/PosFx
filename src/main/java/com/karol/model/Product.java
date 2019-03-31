@@ -29,6 +29,7 @@ abstract public class Product {
         }
         public B productId(ProductId productId){
             product.setProductId(productId);
+            product.setName(productId.getName());
             return self;
         }
 
@@ -38,7 +39,6 @@ abstract public class Product {
         }
         public B category(Category category){
             product.setCategory(category);
-            product.setName(category.name());
             return self;
         }
         public T build(){

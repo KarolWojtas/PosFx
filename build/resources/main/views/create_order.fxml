@@ -37,13 +37,13 @@
                   <URL value="@../styles/createOrder.css" />
                </stylesheets>
                <children>
-                  <Label fx:id="orderSummaryTitleLbl" maxWidth="1.7976931348623157E308" text="PODSUMOWANIE" />
+                  <Label fx:id="orderSummaryTitleLbl" maxWidth="1.7976931348623157E308" text="Podsumowanie:" />
                   <ScrollPane fx:id="summaryListScrollRoot" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                      <content>
                         <VBox fx:id="summaryListRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" />
                      </content>
                   </ScrollPane>
-                  <HBox fx:id="summaryActionRoot" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox fx:id="summaryActionRoot" alignment="CENTER_RIGHT">
                      <children>
                         <Button fx:id="summaryConfirmBtn" mnemonicParsing="false" text="ZATWIERDŹ" />
                      </children>

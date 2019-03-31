@@ -7,7 +7,7 @@
 #orderSummaryRoot{
     -fx-border-width: 0 0 0 2;
     -fx-border-style: solid;
-    -fx-border-color: #333;
+    -fx-border-color: #444;
     -fx-padding: 0;
     -fx-background-color: #444;
 }
@@ -44,5 +44,40 @@
     -fx-padding: 5;
 }
 .menuCategory{
-    -fx-background-color: rgb(47, 104, 196);
+    -fx-background-color: #333;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #444;
 }
+.categoryTitleBox{
+    -fx-background-color: #444;
+    -fx-padding: 5;
+}
+.categoryTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10;
+}
+.menuItemAction{
+    -fx-pref-width: 50;
+    -fx-pref-width: 50;
+    -fx-background-radius: 5;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-border-insets: 5;
+    -fx-background-insets: 5;
+    -fx-cursor: hand;
+}
+.menuItemIncreaseBtn{
+    -fx-background-color: rgb(30, 145, 61);
+}
+.menuItemDecreaseBtn{
+    -fx-background-color: rgb(232, 85, 85);
+}
+.menuItemRoot{
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-border-width: 1;
+    -fx-border-color: #444;
+}
+
