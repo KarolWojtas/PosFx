@@ -1,5 +1,6 @@
 package com.karol.controllers;
 
+import com.karol.interfaces.Controller;
 import com.karol.model.SceneCode;
 import com.karol.services.SceneNavigatorService;
 import com.karol.ui.SpinnerComponent;
@@ -10,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
-public class OrderListController {
+public class OrderListController implements Controller {
 
     @FXML
     private Button goToMainBtn;
@@ -29,7 +30,7 @@ public class OrderListController {
     private boolean isLoading = true;
     @FXML
     public void initialize(){
-        SpinnerComponent spinner = new SpinnerComponent();
+        SpinnerComponent spinner = new SpinnerComponent("loading");
         contentRoot.getChildren().add(spinner);
 
         goToMainBtn.getStyleClass().add("navButton");

@@ -1,12 +1,13 @@
 package com.karol;
 
+import com.karol.interfaces.Controller;
 import com.karol.model.SceneCode;
 import com.karol.services.ProductService;
 import com.karol.services.SceneNavigatorService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class MainController {
+public class MainController implements Controller {
     @FXML
     Button orderListBtn;
     @FXML

@@ -1,5 +1,6 @@
 package com.karol.controllers;
 
+import com.karol.interfaces.Controller;
 import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
 import javafx.animation.Timeline;
@@ -10,10 +11,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
-import javafx.scene.text.Font;
 import javafx.util.Duration;
 
-public class SpinnerController {
+public class SpinnerController implements Controller {
     @FXML
     private VBox root;
     @FXML
@@ -24,10 +24,14 @@ public class SpinnerController {
     private PathTransition circlePathTransitionThree;
     private FadeTransition labelFadeTransition;
     private Transition[] transitions;
+    private String labelText = "proszę czekać";
+
     @FXML
+    @Override
     public void initialize(){
         setupTransitions();
         loadingLbl.getStyleClass().add("spinnerLoadingLbl");
+        loadingLbl.setText(labelText);
         transitions = new Transition[]{circlePathTransitionOne, circlePathTransitionTwo, circlePathTransitionThree, labelFadeTransition};
 
         circlePathTransitionOne.play();
@@ -60,11 +64,11 @@ public class SpinnerController {
         circle3.setRadius(10);
         root.getChildren().addAll(circle1, circle2, circle3);
 
-        Path circlePathOne = createCircleePath(135, -10, 125, 0);
+        Path circlePathOne = createCircleePath(0);
         circlePathTransitionOne = createCirclePathTransition(circle1, circlePathOne);
-        Path circlePathTwo = createCircleePath(135, -10, 125, 15);
+        Path circlePathTwo = createCircleePath(15);
         circlePathTransitionTwo = createCirclePathTransition(circle2, circlePathTwo);
-        Path circlePathThree = createCircleePath(135, -10, 125, 30);
+        Path circlePathThree = createCircleePath(30);
         circlePathTransitionThree = createCirclePathTransition(circle3, circlePathThree);
 
         labelFadeTransition = new FadeTransition();
@@ -75,10 +79,14 @@ public class SpinnerController {
         labelFadeTransition.setDuration(Duration.seconds(1));
         labelFadeTransition.setNode(loadingLbl);
     }
-    private Path createCircleePath(double centerX, double centerY, double radius, double xOffset) {
+
+    private Path createCircleePath(double layoutOffset) {
+        double centerX = 120;
+        double centerY = -20;
+        double radius = 125;
         ArcTo arcTo = new ArcTo();
-        arcTo.setX(centerX - radius + 1 - xOffset);
-        arcTo.setY(centerY - radius - xOffset);
+        arcTo.setX(centerX - radius + 1 - layoutOffset);
+        arcTo.setY(centerY - radius - layoutOffset);
         arcTo.setSweepFlag(false);
         arcTo.setLargeArcFlag(true);
         arcTo.setRadiusX(radius);
@@ -86,11 +94,12 @@ public class SpinnerController {
 
         Path path = new Path();
         path.getElements().addAll(
-                new MoveTo(centerX - radius - xOffset, centerY - radius - xOffset),
+                new MoveTo(centerX - radius - layoutOffset, centerY - radius - layoutOffset),
                 arcTo,
                 new ClosePath());
         return path;
     }
+
     private PathTransition createCirclePathTransition(Node node, Path path){
         PathTransition circlePathTransition = new PathTransition();
         circlePathTransition.setDuration(Duration.seconds(2));
@@ -100,5 +109,9 @@ public class SpinnerController {
         circlePathTransition.setCycleCount(Timeline.INDEFINITE);
         circlePathTransition.setAutoReverse(false);
         return circlePathTransition;
+    }
+
+    public void setText(String text){
+        labelText = text.toUpperCase();
     }
 }
