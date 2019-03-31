@@ -19,13 +19,12 @@ public class SpinnerComponent extends VBox implements Component {
     private void initializeView(){
         view = (VBox) loadViewFromFxml("/views/components/spinner.fxml", spinnerController);
 
-        setMaxHeight(Double.MAX_VALUE);
-        setMaxWidth(Double.MAX_VALUE);
-        view.getStylesheets().add("/styles/application.css");
         view.setAlignment(Pos.CENTER);
         view.getStyleClass().add("spinnerRoot");
-        getChildren().add(view);
         setVgrow(view, Priority.ALWAYS);
+
+        initStandard(this, view);
+
     }
 
     public void pauseAnimation(){

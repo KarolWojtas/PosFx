@@ -1,7 +1,7 @@
 package com.karol.controllers;
 
 import com.karol.interfaces.Controller;
-import com.karol.model.SceneCode;
+import com.karol.enums.SceneCode;
 import com.karol.services.SceneNavigatorService;
 import com.karol.ui.SpinnerComponent;
 import javafx.fxml.FXML;

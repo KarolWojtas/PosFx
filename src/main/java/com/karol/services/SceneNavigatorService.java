@@ -1,7 +1,7 @@
 package com.karol.services;
 
 import com.karol.interfaces.SceneNavigator;
-import com.karol.model.SceneCode;
+import com.karol.enums.SceneCode;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -29,7 +29,7 @@ public class SceneNavigatorService implements SceneNavigator {
     public void go(SceneCode code) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(code.getFxmlResourceUri()));
-            Scene scene = new Scene(root);
+            Scene scene = new Scene(root, window.getScene().getWidth(), window.getScene().getHeight());
             scene.getStylesheets().add(getClass().getResource("/styles/application.css").toString());
             if(code.getCssResourceUri() != null){
                 scene.getStylesheets().add(getClass().getResource(code.getCssResourceUri()).toString());

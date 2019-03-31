@@ -1,0 +1,48 @@
+#contentRoot{
+    -fx-background-color: #333;
+}
+#categoryListRoot{
+    -fx-background-color: #444;
+}
+#orderSummaryRoot{
+    -fx-border-width: 0 0 0 2;
+    -fx-border-style: solid;
+    -fx-border-color: #333;
+    -fx-padding: 0;
+    -fx-background-color: #444;
+}
+#scrollRoot, #summaryListScrollRoot{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+#summaryListRoot{
+    -fx-background-color: #333;
+}
+#orderSummaryTitleLbl{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+#summaryConfirmBtn{
+    -fx-background-color: rgb(62, 188, 95);
+    -fx-background-radius: 5;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-border-insets: 5;
+    -fx-background-insets: 5;
+    -fx-cursor: hand;
+}
+#summaryConfirmBtn:hover{
+    -fx-background-color: rgb(30, 145, 61);
+}
+#summaryActionRoot{
+    -fx-background-color: #444;
+    -fx-padding: 5;
+}
+.menuCategory{
+    -fx-background-color: rgb(47, 104, 196);
+}

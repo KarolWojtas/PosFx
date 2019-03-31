@@ -8,37 +8,23 @@ public class Drink extends Product {
     private Drink(){
     }
 
-    public static class Builder {
-        private Drink drink;
-
-        public Builder(){
-            this.drink = new Drink();
+    public static class Builder extends Product.Builder<Drink, Builder>{
+        @Override
+        protected Drink createProduct() {
+            return new Drink();
         }
 
-        public Builder productid(ProductId productId){
-            drink.setProductId(productId);
-            return this;
-        }
-
-        public Builder price(float price){
-            drink.setPrice(price);
-            return this;
-        }
-        public Builder name(String name){
-            drink.setName(name);
+        @Override
+        protected Builder createSelf() {
             return this;
         }
         public Builder volumeLiters(float volumeLiters){
-            drink.setVolumeLiters(volumeLiters);
-            return this;
+            product.setVolumeLiters(volumeLiters);
+            return self;
         }
         public Builder isAlcoholic(boolean isAlcoholic){
-            drink.setAlcoholic(isAlcoholic);
-            return this;
-        }
-
-        public Drink build(){
-            return drink;
+            product.setAlcoholic(isAlcoholic);
+            return self;
         }
     }
 
@@ -56,6 +42,11 @@ public class Drink extends Product {
 
     public void setAlcoholic(boolean alcoholic) {
         isAlcoholic = alcoholic;
+    }
+
+    @Override
+    public String[] getDescription() {
+        return new String[]{String.format("Pojemność: %fl",volumeLiters)};
     }
 
     @Override

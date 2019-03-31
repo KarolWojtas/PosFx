@@ -2,8 +2,6 @@ package com.karol.services;
 
 import com.karol.model.Product;
 import com.karol.tasks.InitializeMenuTask;
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.subjects.BehaviorSubject;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -43,7 +41,6 @@ public class ProductService {
             System.out.println(productList);
             isComputingMenu.onNext(false);
         });
-        // TODO zrobić executor singleton do użycia w całej aplikacji
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(menuTask);
         executor.shutdown();

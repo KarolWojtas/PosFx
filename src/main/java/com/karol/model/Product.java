@@ -1,11 +1,13 @@
 package com.karol.model;
 
-import java.util.Random;
+import com.karol.enums.Category;
+import com.karol.enums.ProductId;
 
-public class Product {
+abstract public class Product {
     private ProductId productId;
     private Float price;
     private String name;
+    private Category category;
 
     public Product(){
 
@@ -14,6 +16,34 @@ public class Product {
     public Product(Float price, String name) {
         this.price = price;
         this.name = name;
+    }
+    public abstract static class Builder<T extends Product, B extends Builder>{
+        protected T product;
+        protected B self;
+        protected abstract T createProduct();
+        protected abstract B createSelf();
+
+        protected Builder(){
+            this.product = createProduct();
+            this.self = createSelf();
+        }
+        public B productId(ProductId productId){
+            product.setProductId(productId);
+            return self;
+        }
+
+        public B price(float price){
+            product.setPrice(price);
+            return self;
+        }
+        public B category(Category category){
+            product.setCategory(category);
+            product.setName(category.name());
+            return self;
+        }
+        public T build(){
+            return product;
+        }
     }
 
     public Float getPrice() {
@@ -39,6 +69,16 @@ public class Product {
     public void setProductId(ProductId productId) {
         this.productId = productId;
     }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    abstract public String[] getDescription();
 
     @Override
     public String toString() {

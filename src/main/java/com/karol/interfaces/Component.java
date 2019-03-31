@@ -19,4 +19,10 @@ public interface Component {
             return null;
         }
     }
+    default void  initStandard(Pane self, Pane view){
+        self.setMaxHeight(Double.MAX_VALUE);
+        self.setMaxWidth(Double.MAX_VALUE);
+        view.getStylesheets().add("/styles/application.css");
+        self.getChildren().add(view);
+    }
 }

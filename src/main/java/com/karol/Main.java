@@ -18,6 +18,8 @@ public class Main extends Application {
         scene.getStylesheets().add(getClass().getResource("/styles/application.css").toString());
         scene.getStylesheets().add(getClass().getResource("/styles/main_scene.css").toString());
         window.setTitle("PosFx");
+        window.setWidth(900);
+        window.setHeight(600);
         window.setScene(scene);
         window.show();
         initServices();
