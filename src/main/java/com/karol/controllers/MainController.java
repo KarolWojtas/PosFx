@@ -21,15 +21,6 @@ public class MainController implements Controller {
             SceneNavigatorService.getInstance().go(SceneCode.ORDER_LIST_SCENE);
         });
         createOrderBtn.setOnAction(event -> SceneNavigatorService.getInstance().go(SceneCode.CREATE_ORDER_SCENE));
-
-        ProductService.getInstance().isComputingMenu()
-            .subscribe(value -> {
-                if(value){
-                    System.out.println("loading");
-                } else {
-                    System.out.println("idle");
-                }
-            });
     }
 
 }

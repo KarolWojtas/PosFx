@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karol.controllers.CreateOrderController">
    <children>
       <HBox fx:id="navRoot" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
@@ -38,7 +37,7 @@
                </stylesheets>
                <children>
                   <Label fx:id="orderSummaryTitleLbl" maxWidth="1.7976931348623157E308" text="Podsumowanie:" />
-                  <ScrollPane fx:id="summaryListScrollRoot" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                  <ScrollPane fx:id="summaryListScrollRoot" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                      <content>
                         <VBox fx:id="summaryListRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" />
                      </content>

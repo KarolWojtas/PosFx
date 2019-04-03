@@ -32,9 +32,9 @@ public class InitializeMenuTask extends Task<List<Product>> {
     private static Drink[] initDrinks(){
         Drink beer = new Drink.Builder().productId(ProductId.BEER).price(8f)
                 .volumeLiters(0.5f).category(Category.DRINK).build();
-        Drink tea = new Drink.Builder().productId(ProductId.TEA)
+        Drink tea = new Drink.Builder().productId(ProductId.TEA).category(Category.DRINK)
                 .isAlcoholic(false).price(5f).volumeLiters(0.3f).build();
-        Drink orangeJuice = new Drink.Builder().productId(ProductId.ORANGE_JUICE)
+        Drink orangeJuice = new Drink.Builder().productId(ProductId.ORANGE_JUICE).category(Category.DRINK)
                 .isAlcoholic(false).price(4.5f).volumeLiters(0.4f).build();
         return new Drink[]{beer, tea, orangeJuice};
     }

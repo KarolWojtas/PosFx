@@ -1,5 +1,6 @@
 package com.karol.model;
 
+import com.karol.enums.Category;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
@@ -31,6 +32,9 @@ public class ProductControl {
         quantity = quantity;
     }
 
+    public Category getCategory(){
+        return product.getCategory();
+    }
     public int increase(){
         quantity.setValue(quantity.get() + 1);
         return quantity.get();
@@ -42,5 +46,13 @@ public class ProductControl {
             quantity.set(oldValue - 1);
         }
         return quantity.get();
+    }
+
+    @Override
+    public String toString() {
+        return "ProductControl{" +
+                "product=" + product +
+                ", quantity=" + quantity +
+                '}';
     }
 }
