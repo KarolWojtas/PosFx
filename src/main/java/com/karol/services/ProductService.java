@@ -78,4 +78,8 @@ public class ProductService {
     public static List<MenuCategoryComponent> getMenuCategories() {
         return menuCategories;
     }
+
+    public static ObservableList<ProductControl> getProductControls() {
+        return productControls;
+    }
 }

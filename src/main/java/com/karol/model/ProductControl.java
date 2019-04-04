@@ -1,8 +1,10 @@
 package com.karol.model;
 
 import com.karol.enums.Category;
+import javafx.beans.Observable;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.util.Callback;
 
 public class ProductControl {
     private Product product;
@@ -50,9 +52,10 @@ public class ProductControl {
 
     @Override
     public String toString() {
-        return "ProductControl{" +
-                "product=" + product +
-                ", quantity=" + quantity +
-                '}';
+        return String.format("%s: ilość: %d", product.getName(), quantity.get());
+    }
+
+    public static Callback<ProductControl, Observable[]> extractor(){
+        return productControl -> new Observable[]{productControl.quantityProperty()};
     }
 }
