@@ -9,6 +9,7 @@
 .spinnerLoadingLbl {
     -fx-fill: white;
     -fx-font-weight: bold;
+    -fx-line-spacing: 3;
 }
 .navButton {
     -fx-background-color: #333;
@@ -54,4 +55,31 @@
 .scroll-pane .scroll-bar:vertical .track-background,
 .scroll-pane .scroll-bar:horizontal .track-background{
     -fx-background-color: #333;
+}
+.actionStatusRoot{
+    -fx-background-color: #333;
+    -fx-opacity: 0.9;
+}
+.actionStatusConfirmBtn{
+    -fx-background-color: rgb(232, 85, 85);
+    -fx-opacity: 0.9;
+    -fx-padding: 5;
+    -fx-text-fill: white;
+    -fx-border-insets: 10;
+    -fx-background-insets: 10;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-border-color: white;
+    -fx-min-width: 100;
+    -fx-font-size: 15;
+}
+.actionStatusConfirmBtn:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.actionStatusConfirmBtn:success{
+    -fx-background-color: rgb(62, 188, 95);
+}
+.actionStatusConfirmBtn:error{
+    -fx-background-color: rgb(232, 85, 85);
 }

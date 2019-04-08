@@ -1,6 +1,5 @@
 package com.karol.tasks;
 
-import com.karol.enums.Category;
 import com.karol.model.ProductControl;
 import com.karol.ui.MenuCategoryComponent;
 import com.karol.ui.MenuItemComponent;

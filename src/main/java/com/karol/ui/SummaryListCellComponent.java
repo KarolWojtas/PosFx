@@ -1,6 +1,5 @@
 package com.karol.ui;
 
-import com.karol.interfaces.Controller;
 import com.karol.model.ProductControl;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,5 +41,9 @@ public class SummaryListCellComponent{
 
     public HBox getRoot() {
         return root;
+    }
+
+    public void setRootPrefWidth(double width){
+        root.setPrefWidth(width);
     }
 }

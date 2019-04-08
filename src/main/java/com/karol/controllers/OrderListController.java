@@ -30,7 +30,7 @@ public class OrderListController implements Controller {
     private boolean isLoading = true;
     @FXML
     public void initialize(){
-        SpinnerComponent spinner = new SpinnerComponent("loading");
+        SpinnerComponent spinner = new SpinnerComponent("zapisywanie");
         contentRoot.getChildren().add(spinner);
 
         goToMainBtn.getStyleClass().add("navButton");

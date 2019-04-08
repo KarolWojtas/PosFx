@@ -33,4 +33,7 @@ public class SpinnerComponent extends VBox implements Component {
     public void playAnimation(){
         spinnerController.playAnimation();
     }
+    public void setText(String text){
+        spinnerController.setText(text);
+    }
 }

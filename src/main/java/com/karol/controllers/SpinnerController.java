@@ -5,6 +5,8 @@ import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
 import javafx.animation.Timeline;
 import javafx.animation.Transition;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
@@ -24,14 +26,16 @@ public class SpinnerController implements Controller {
     private PathTransition circlePathTransitionThree;
     private FadeTransition labelFadeTransition;
     private Transition[] transitions;
-    private String labelText = "proszę czekać";
+    private StringProperty labelTextProperty = new SimpleStringProperty("proszę czekać");
+    private double radius = 125;
 
     @FXML
     @Override
     public void initialize(){
-        setupTransitions();
         loadingLbl.getStyleClass().add("spinnerLoadingLbl");
-        loadingLbl.setText(labelText);
+        loadingLbl.setPrefWidth(radius);
+        loadingLbl.textProperty().bind(labelTextProperty);
+        setupTransitions();
         transitions = new Transition[]{circlePathTransitionOne, circlePathTransitionTwo, circlePathTransitionThree, labelFadeTransition};
 
         circlePathTransitionOne.play();
@@ -82,8 +86,7 @@ public class SpinnerController implements Controller {
 
     private Path createCircleePath(double layoutOffset) {
         double centerX = 120;
-        double centerY = -20;
-        double radius = 125;
+        double centerY = -30;
         ArcTo arcTo = new ArcTo();
         arcTo.setX(centerX - radius + 1 - layoutOffset);
         arcTo.setY(centerY - radius - layoutOffset);
@@ -112,6 +115,6 @@ public class SpinnerController implements Controller {
     }
 
     public void setText(String text){
-        labelText = text.toUpperCase();
+        labelTextProperty.set(text.toUpperCase());
     }
 }

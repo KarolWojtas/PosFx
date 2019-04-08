@@ -8,10 +8,7 @@ import com.karol.tasks.InitializeProductControlsTask;
 import com.karol.ui.MenuCategoryComponent;
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Worker;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -75,11 +72,12 @@ public class ProductService {
         return menuCategoriesSubject;
     }
 
-    public static List<MenuCategoryComponent> getMenuCategories() {
-        return menuCategories;
-    }
-
     public static ObservableList<ProductControl> getProductControls() {
         return productControls;
     }
+
+    public static void resetProductControls(){
+        productControls.forEach(ProductControl::resetQuantity);
+    }
+
 }

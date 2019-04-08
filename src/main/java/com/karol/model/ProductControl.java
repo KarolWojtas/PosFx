@@ -37,6 +37,7 @@ public class ProductControl {
     public Category getCategory(){
         return product.getCategory();
     }
+
     public int increase(){
         quantity.setValue(quantity.get() + 1);
         return quantity.get();
@@ -48,6 +49,10 @@ public class ProductControl {
             quantity.set(oldValue - 1);
         }
         return quantity.get();
+    }
+
+    public void resetQuantity(){
+        quantity.setValue(0);
     }
 
     @Override
