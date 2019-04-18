@@ -1,5 +1,6 @@
 package com.karol.controllers;
 
+import com.karol.enums.ThemeColors;
 import com.karol.interfaces.Controller;
 import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
@@ -57,13 +58,14 @@ public class SpinnerController implements Controller {
         Circle circle1 = new Circle();
         circle1.setFill(Color.BLUE);
         circle1.setStroke(Color.TRANSPARENT);
+        circle1.setFill(ThemeColors.PASTEL_BLUE.getRadialGradient());
         circle1.setRadius(10);
         Circle circle2 = new Circle();
-        circle2.setFill(Color.RED);
+        circle2.setFill(ThemeColors.PASTEL_RED.getRadialGradient());
         circle2.setStroke(Color.TRANSPARENT);
         circle2.setRadius(10);
         Circle circle3 = new Circle();
-        circle3.setFill(Color.YELLOW);
+        circle3.setFill(ThemeColors.PASTEL_YELLOW.getRadialGradient());
         circle3.setStroke(Color.TRANSPARENT);
         circle3.setRadius(10);
         root.getChildren().addAll(circle1, circle2, circle3);

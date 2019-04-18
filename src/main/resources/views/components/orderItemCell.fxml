@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox fx:id="orderItemCellRoot" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="orderItemCellNameLbl" maxWidth="1.7976931348623157E308" text="name" HBox.hgrow="ALWAYS" />
+      <Label fx:id="orderItemCellQuantityLbl" text="quantity" />
+   </children>
+</HBox>

@@ -1,21 +1,25 @@
 package com.karol.model;
 
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Order {
     private String id;
-    private List<ProductControl> products;
+    private List<OrderItem> products = new ArrayList<>();
     private String orderer;
     private ZonedDateTime created;
     private double totalPrice;
 
-    public List<ProductControl> getProducts() {
+    public List<OrderItem> getProducts() {
         return products;
     }
 
     public void setProducts(List<ProductControl> products) {
-        this.products = products;
+        products.forEach(productControl -> {
+           this.products.add(productControl.toOrderItem());
+        });
     }
 
     public String getOrderer() {
@@ -40,5 +44,24 @@ public class Order {
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id='" + id + '\'' +
+                ", products=" + products.stream().map(productControl -> productControl.getProduct().getName() + productControl.getQuantity()).collect(Collectors.joining(", ")) +
+                ", orderer='" + orderer + '\'' +
+                ", created=" + created +
+                ", totalPrice=" + totalPrice +
+                '}';
     }
 }

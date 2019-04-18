@@ -1,6 +1,8 @@
 package com.karol.model;
 
-public class Drink extends Product {
+import java.io.Serializable;
+
+public class Drink extends Product implements Serializable {
 
     private float volumeLiters;
     private boolean isAlcoholic;

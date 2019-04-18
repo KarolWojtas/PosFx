@@ -7,7 +7,7 @@ import com.karol.model.Order;
 import com.karol.model.ProductControl;
 import com.karol.services.OrderService;
 import com.karol.ui.ActionStatusComponent;
-import com.karol.ui.ProductControlListCell;
+import com.karol.ui.cells.ProductControlListCell;
 import com.karol.services.ProductService;
 import com.karol.services.SceneNavigatorService;
 import com.karol.ui.SpinnerComponent;

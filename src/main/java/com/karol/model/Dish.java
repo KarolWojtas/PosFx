@@ -2,7 +2,9 @@ package com.karol.model;
 
 import com.karol.enums.Pungency;
 
-public class Dish extends Product{
+import java.io.Serializable;
+
+public class Dish extends Product implements Serializable {
     private int weightGrams;
     private Pungency pungency;
 

@@ -6,7 +6,9 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.util.Callback;
 
-public class ProductControl {
+import java.io.Serializable;
+
+public class ProductControl implements Serializable {
     private Product product;
     private IntegerProperty quantity = new SimpleIntegerProperty(0);
 
@@ -62,5 +64,9 @@ public class ProductControl {
 
     public static Callback<ProductControl, Observable[]> extractor(){
         return productControl -> new Observable[]{productControl.quantityProperty()};
+    }
+
+    public OrderItem toOrderItem(){
+        return new OrderItem(quantity.get(), product);
     }
 }

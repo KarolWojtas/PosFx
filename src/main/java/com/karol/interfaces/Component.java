@@ -2,6 +2,7 @@ package com.karol.interfaces;
 
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;

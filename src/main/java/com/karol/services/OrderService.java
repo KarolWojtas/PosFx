@@ -3,23 +3,21 @@ package com.karol.services;
 import com.karol.interfaces.OrderStoreService;
 import com.karol.model.Order;
 import com.karol.model.ProductControl;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.subjects.PublishSubject;
 import io.reactivex.subjects.Subject;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 public class OrderService {
     private static OrderService ourInstance = new OrderService();
-    private OrderStoreService orderStore = new InMemoryOrderService();
+    private OrderStoreService orderStore = new InMemoryOrderStoreService();
     private Subject<Order> saveOrderSubject = PublishSubject.create();
-    private Subject<Order> getAllOrdersSubject = PublishSubject.create();
+    private Subject<List<Order>> getAllOrdersSubject = PublishSubject.create();
     private StringProperty ordererName = new SimpleStringProperty("Anonim");
-    private Task<Order> saveOrderTask;
     public static OrderService getInstance() {
         return ourInstance;
     }
@@ -35,14 +33,17 @@ public class OrderService {
         order.setTotalPrice(totalPrice);
         order.setCreated(ZonedDateTime.now());
         orderStore.saveOrder(order);
-
+    }
+    public Subject<List<Order>> fetchOrders(){
+        orderStore.getAllOrders();
+        return getAllOrdersSubject;
     }
 
     public Subject<Order> getSaveOrderSubject() {
         return saveOrderSubject;
     }
 
-    public Subject<Order> getGetAllOrdersSubject() {
+    public Subject<List<Order>> getGetAllOrdersSubject() {
         return getAllOrdersSubject;
     }
 }

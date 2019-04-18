@@ -1,16 +1,79 @@
 
-.root {
-    -fx-background-color: #ccc;
-}
 #navRoot {
     -fx-background-color: #333;
 }
 #contentRoot {
     -fx-background-color: #eee;
 }
-#scrollRoot {
-    -fx-opacity: 1;
+#orderCellRoot{
+    -fx-background-color: #444;
 }
-#orderRoot {
-    -fx-background-color: yellow;
+#orderCellContentRoot{
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #555;
+}
+
+#orderCellPriceLbl,
+#orderCellCreatedLbl,
+#orderCellOrdererLbl
+{
+    -fx-padding: 10;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+#orderCellProductsListView, #orderListView{
+    -fx-background-color: #333;
+}
+#orderCellProductsListView{
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 0 10 10;
+}
+#orderListView .list-cell,
+#orderCellProductsListView .list-cell{
+    -fx-padding: 10 10;
+}
+#orderListView .list-cell:odd{
+    -fx-background-color: #444;
+}
+
+#orderListView .list-cell:even{
+    -fx-background-color: #444;
+}
+#orderCellProductsListView .list-cell .label{
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+#orderCellProductsListView .list-cell:odd{
+    -fx-background-color: #333;
+}
+
+#orderCellProductsListView .list-cell:even{
+    -fx-background-color: #333;
+}
+#reportPane{
+    -fx-background-color: #444;
+    -fx-background-insets: 1 1 0 0;
+    -fx-background-insets-color: #ccc;
+}
+#reportScrollPane,
+#reportScrollPane .viewport{
+    -fx-background-insets: 2 2 0 0;
+    -fx-background-insets-color: rgba(0, 0, 0, 0);
+    -fx-background-color: #444;
+}
+#reportItemRoot{
+    -fx-padding: 10 5;
+    -fx-background-color: #444;
+}
+#reportItemNameLbl{
+    -fx-border-width: 0 0 3 0;
+}
+#reportItemValueText{
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+    -fx-text-fill: white;
 }
