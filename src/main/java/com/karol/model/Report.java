@@ -1,9 +1,15 @@
 package com.karol.model;
 
+import java.util.List;
+
 public class Report {
     private double totalIncome;
     private double totalVolumeOfDrinks;
+    private List<Order> orders;
 
+    public Report(List<Order> orders){
+        this.orders = orders;
+    }
     public double getTotalIncome() {
         return totalIncome;
     }

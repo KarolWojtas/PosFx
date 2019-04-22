@@ -13,7 +13,7 @@
    <children>
       <HBox fx:id="navRoot" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="goToMainBtn" mnemonicParsing="false" onAction="#navigateToMain" text="go to main" />
+            <Button fx:id="goToMainBtn" mnemonicParsing="false" onAction="#navigateToMain" text="Wróć" />
          </children>
          <stylesheets>
             <URL value="@../styles/application.css" />

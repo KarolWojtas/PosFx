@@ -24,7 +24,7 @@
                </HBox.margin>
             </Label>
             <Region fx:id="spreadRegion" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-            <Button fx:id="goToMainBtn" mnemonicParsing="false" text="go to main" />
+            <Button fx:id="goToMainBtn" mnemonicParsing="false" text="Wróć" />
          </children>
       </HBox>
       <StackPane fx:id="stackPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS">

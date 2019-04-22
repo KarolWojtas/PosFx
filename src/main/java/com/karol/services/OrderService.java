@@ -5,6 +5,8 @@ import com.karol.model.Order;
 import com.karol.model.ProductControl;
 import io.reactivex.subjects.PublishSubject;
 import io.reactivex.subjects.Subject;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
@@ -18,9 +20,12 @@ public class OrderService {
     private Subject<Order> saveOrderSubject = PublishSubject.create();
     private Subject<List<Order>> getAllOrdersSubject = PublishSubject.create();
     private StringProperty ordererName = new SimpleStringProperty("Anonim");
+    private BooleanProperty useAwsOrderService = new SimpleBooleanProperty(false);
     public static OrderService getInstance() {
         return ourInstance;
     }
+
+    //TODO dodać przełączanie między usługami AWS / RAM
 
     private OrderService() {
     }
@@ -49,5 +54,9 @@ public class OrderService {
 
     public StringProperty ordererNameProperty() {
         return ordererName;
+    }
+
+    public BooleanProperty useAwsOrderServiceProperty() {
+        return useAwsOrderService;
     }
 }
