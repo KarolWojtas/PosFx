@@ -46,4 +46,8 @@ public class OrderService {
     public Subject<List<Order>> getGetAllOrdersSubject() {
         return getAllOrdersSubject;
     }
+
+    public StringProperty ordererNameProperty() {
+        return ordererName;
+    }
 }
