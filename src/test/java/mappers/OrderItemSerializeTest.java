@@ -4,6 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.karol.enums.ProductId;
 import com.karol.model.dto.OrderItemDto;
 import org.junit.Test;
+
+import java.nio.file.FileSystems;
+
 import static org.junit.Assert.*;
 
 public class OrderItemSerializeTest {
@@ -28,6 +31,6 @@ public class OrderItemSerializeTest {
         }
         assertEquals(item.quantity, deserializedItem.quantity);
         assertEquals(item.productId, deserializedItem.productId);
-        System.out.println(deserializedItem);
+        System.out.println(FileSystems.getDefault().getPath("").toAbsolutePath());
     }
 }

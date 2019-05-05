@@ -27,6 +27,11 @@ public class ToggleButtonController implements Controller {
     private Color trueColor = Color.rgb(9, 153, 9);
     private FillTransition toTrueFillTransition = new FillTransition(Duration.millis(transitionDuration));
     private FillTransition toFalseFillTransition = new FillTransition(Duration.millis(transitionDuration));
+
+    public ToggleButtonController(boolean initialState) {
+        state.setValue(initialState);
+    }
+
     @Override
     public void initialize() {
         initialStateChange();

@@ -1,5 +1,8 @@
 package com.karol.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
+
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +23,10 @@ public class Order {
         products.forEach(productControl -> {
            this.products.add(productControl.toOrderItem());
         });
+    }
+
+    public void setOrderItems(List<OrderItem> products){
+        this.products = products;
     }
 
     public String getOrderer() {

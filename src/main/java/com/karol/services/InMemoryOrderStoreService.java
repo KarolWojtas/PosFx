@@ -1,52 +1,33 @@
 package com.karol.services;
 
-import com.karol.interfaces.OrderStoreService;
 import com.karol.model.Order;
-import javafx.concurrent.Task;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Collectors;
 
-public class InMemoryOrderStoreService implements OrderStoreService {
+public class InMemoryOrderStoreService extends AbstractOrderStoreService {
 
     private List<Order> orders = new ArrayList<>();
 
     @Override
-    public void saveOrder(Order order) {
-        Task<Order> saveOrderTask = new Task<Order>() {
-            @Override
-            protected Order call() throws Exception {
-                order.setId(UUID.randomUUID().toString());
-                orders.add(order);
-                Thread.sleep(1000);
-                return order;
-            }
-        };
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-        saveOrderTask.setOnSucceeded(event -> {
-            OrderService.getInstance().getSaveOrderSubject().onNext(saveOrderTask.getValue());
-            executorService.shutdown();
-        });
-        executorService.execute(saveOrderTask);
+    Order saveOrderHandler(Order order) {
+        order.setId(UUID.randomUUID().toString());
+        orders.add(order);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
+        return order;
     }
 
     @Override
-    public void getAllOrders() {
-        Task<List<Order>> getOrdersTask = new Task<List<Order>>() {
-            @Override
-            protected List<Order> call() throws Exception {
-                Thread.sleep(1000);
-                return orders.stream().sorted((o1, o2) -> o1.getCreated().isBefore(o2.getCreated()) ? 1 : -1).collect(Collectors.toList());
-            }
-        };
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-        getOrdersTask.setOnSucceeded(event -> {
-            OrderService.getInstance().getGetAllOrdersSubject().onNext(getOrdersTask.getValue());
-            executorService.shutdown();
-        });
-        executorService.execute(getOrdersTask);
+    List<Order> getOrdersHandler() {
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
+        return orders;
     }
 }

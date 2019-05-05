@@ -1,5 +1,6 @@
 package com.karol.services;
 
+import com.karol.enums.ProductId;
 import com.karol.model.Product;
 import com.karol.model.ProductControl;
 import com.karol.tasks.InitializeMenuComponentsTask;
@@ -10,7 +11,9 @@ import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
 import javafx.collections.ObservableList;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -20,7 +23,7 @@ import java.util.concurrent.Executors;
 public class ProductService {
 
     private static ProductService ourInstance;
-    private static List<Product> productList;
+    private static List<Product> productList = new ArrayList<>();
     private static ObservableList<ProductControl> productControls;
     private static List<MenuCategoryComponent> menuCategories;
     private static final InitializeProductControlsTask productControlsTask = new InitializeProductControlsTask();
@@ -80,4 +83,11 @@ public class ProductService {
         productControls.forEach(ProductControl::resetQuantity);
     }
 
+    public static List<Product> getProductList() {
+        return productList;
+    }
+
+    public static Optional<Product> getProduct(ProductId productId){
+        return productList.stream().filter(product -> product.getProductId() == productId).findFirst();
+    }
 }

@@ -1,5 +1,6 @@
 package com.karol;
 
+import com.karol.services.FileService;
 import com.karol.services.ProductService;
 import com.karol.services.SceneNavigatorService;
 import javafx.application.Application;
@@ -29,7 +30,6 @@ public class Main extends Application {
     private void initServices(){
         SceneNavigatorService.getInstance().setStage(window);
         ProductService.getInstance();
-        Font.loadFont(getClass().getResource("/fonts/fontawesome-webfont.ttf").toExternalForm(), 10);
     }
 
     public static void main(String[] args) {

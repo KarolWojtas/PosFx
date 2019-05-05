@@ -1,5 +1,6 @@
 package com.karol.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.karol.mappers.ZonedDateTimeDeserializer;
@@ -15,6 +16,7 @@ public class OrderDto {
     @JsonDeserialize(using = ZonedDateTimeDeserializer.class)
     public ZonedDateTime created;
     public double totalPrice;
+    @JsonProperty("products")
     public List<OrderItemDto> orderItems;
 
     public String getId() {

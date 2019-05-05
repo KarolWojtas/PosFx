@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\posfx-1.0-SNAPSHOT.jar;%APP_HOME%\lib\rxjava-2.2.0.jar;%APP_HOME%\lib\javafx-fxml-11.0.2-linux.jar;%APP_HOME%\lib\javafx-controls-11.0.2-linux.jar;%APP_HOME%\lib\javafx-controls-11.0.2.jar;%APP_HOME%\lib\javafx-graphics-11.0.2-linux.jar;%APP_HOME%\lib\javafx-graphics-11.0.2.jar;%APP_HOME%\lib\javafx-base-11.0.2-linux.jar;%APP_HOME%\lib\javafx-base-11.0.2.jar;%APP_HOME%\lib\reactive-streams-1.0.2.jar
+set CLASSPATH=%APP_HOME%\lib\posfx-1.0-SNAPSHOT.jar;%APP_HOME%\lib\rxjava-2.2.0.jar;%APP_HOME%\lib\jackson-databind-2.0.1.jar;%APP_HOME%\lib\javafx-fxml-11.0.2-linux.jar;%APP_HOME%\lib\javafx-controls-11.0.2-linux.jar;%APP_HOME%\lib\javafx-controls-11.0.2.jar;%APP_HOME%\lib\javafx-graphics-11.0.2-linux.jar;%APP_HOME%\lib\javafx-graphics-11.0.2.jar;%APP_HOME%\lib\javafx-base-11.0.2-linux.jar;%APP_HOME%\lib\javafx-base-11.0.2.jar;%APP_HOME%\lib\reactive-streams-1.0.2.jar;%APP_HOME%\lib\jackson-annotations-2.0.1.jar;%APP_HOME%\lib\jackson-core-2.0.1.jar
 
 @rem Execute posfx
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POSFX_OPTS%  -classpath "%CLASSPATH%" com.karol.Main %CMD_LINE_ARGS%

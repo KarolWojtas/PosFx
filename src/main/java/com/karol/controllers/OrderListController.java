@@ -86,7 +86,7 @@ public class OrderListController implements Controller {
         stackPane.getChildren().add(spinner);
         reportPane.getChildren().add(reportComponent);
 
-        showReportBtn = new ToggleButtonComponent();
+        showReportBtn = new ToggleButtonComponent(false);
         navRoot.getChildren().add(0, showReportBtn);
         goToMainBtn.getStyleClass().add("navButton");
         navRoot.getStyleClass().add("navBar");

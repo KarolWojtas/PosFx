@@ -1,0 +1,49 @@
+[ {
+  "id" : "c4cce23a-53d3-423b-84a0-6e7ca9c752e6",
+  "orderer" : "Anonim",
+  "created" : "2019-05-05T15:41:01.881519+02:00[Europe/Warsaw]",
+  "totalPrice" : 84.5,
+  "products" : [ {
+    "productId" : "STEAK",
+    "quantity" : 2
+  }, {
+    "productId" : "ORANGE_JUICE",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "e237633b-cd98-404d-9b04-6811a0f6c124",
+  "orderer" : "Anonim",
+  "created" : "2019-05-05T15:41:26.282962+02:00[Europe/Warsaw]",
+  "totalPrice" : 46.0,
+  "products" : [ {
+    "productId" : "PASTA_BOLOGNESE",
+    "quantity" : 2
+  }, {
+    "productId" : "BEER",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "40df4dd1-b21f-4b9f-830c-0c6f711939ec",
+  "orderer" : "Anonim",
+  "created" : "2019-05-05T15:48:56.12861+02:00[Europe/Warsaw]",
+  "totalPrice" : 85.0,
+  "products" : [ {
+    "productId" : "STEAK",
+    "quantity" : 2
+  }, {
+    "productId" : "TEA",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "89ec890f-ea61-479f-b11b-df157d601c88",
+  "orderer" : "Anonim",
+  "created" : "2019-05-05T15:49:12.912292+02:00[Europe/Warsaw]",
+  "totalPrice" : 43.0,
+  "products" : [ {
+    "productId" : "PASTA_BOLOGNESE",
+    "quantity" : 2
+  }, {
+    "productId" : "TEA",
+    "quantity" : 1
+  } ]
+} ]

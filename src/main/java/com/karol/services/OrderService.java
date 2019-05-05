@@ -15,12 +15,14 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 public class OrderService {
+    private static InMemoryOrderStoreService inMemoryOrderStoreService = new InMemoryOrderStoreService();
+    private static FileOrderStoreService fileOrderStoreService = new FileOrderStoreService();
     private static OrderService ourInstance = new OrderService();
-    private OrderStoreService orderStore = new InMemoryOrderStoreService();
+    private OrderStoreService orderStore = inMemoryOrderStoreService;
     private Subject<Order> saveOrderSubject = PublishSubject.create();
     private Subject<List<Order>> getAllOrdersSubject = PublishSubject.create();
     private StringProperty ordererName = new SimpleStringProperty("Anonim");
-    private BooleanProperty useAwsOrderService = new SimpleBooleanProperty(false);
+    private BooleanProperty useFileOrderService = new SimpleBooleanProperty(false);
     public static OrderService getInstance() {
         return ourInstance;
     }
@@ -28,6 +30,13 @@ public class OrderService {
     //TODO dodać przełączanie między usługami AWS / RAM
 
     private OrderService() {
+        useFileOrderServiceProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue){
+                orderStore = fileOrderStoreService;
+            } else {
+                orderStore = inMemoryOrderStoreService;
+            }
+        });
     }
 
     public void saveOrder(ObservableList<ProductControl> products){
@@ -56,7 +65,7 @@ public class OrderService {
         return ordererName;
     }
 
-    public BooleanProperty useAwsOrderServiceProperty() {
-        return useAwsOrderService;
+    public BooleanProperty useFileOrderServiceProperty() {
+        return useFileOrderService;
     }
 }

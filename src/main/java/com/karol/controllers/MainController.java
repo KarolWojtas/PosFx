@@ -24,15 +24,15 @@ public class MainController implements Controller {
     private Label switchOrderServiceLbl;
 
     private ToggleButtonComponent switchOrderServiceBtn;
-    private String usingAwsOrderServiceText = "I/O AWS";
+    private String usingAwsOrderServiceText = "I/O FILE";
     private String usingInMemoryOrderServiceText = "I/O RAM";
     @FXML
     public void initialize(){
         mainNavBar.getStyleClass().add("navBar");
         mainUsernameInput.textProperty().bindBidirectional(OrderService.getInstance().ordererNameProperty());
-        switchOrderServiceBtn = new ToggleButtonComponent();
-        switchOrderServiceBtn.selectedProperty().bindBidirectional(OrderService.getInstance().useAwsOrderServiceProperty());
-        switchOrderServiceLbl.setText(OrderService.getInstance().useAwsOrderServiceProperty().get() ? usingAwsOrderServiceText : usingInMemoryOrderServiceText);
+        switchOrderServiceBtn = new ToggleButtonComponent(OrderService.getInstance().useFileOrderServiceProperty().getValue());
+        switchOrderServiceBtn.selectedProperty().bindBidirectional(OrderService.getInstance().useFileOrderServiceProperty());
+        switchOrderServiceLbl.setText(OrderService.getInstance().useFileOrderServiceProperty().get() ? usingAwsOrderServiceText : usingInMemoryOrderServiceText);
         mainNavBar.getChildren().add(3, switchOrderServiceBtn);
 
         orderListBtn.setText("Lista zamówień");

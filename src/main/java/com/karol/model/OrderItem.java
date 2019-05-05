@@ -23,7 +23,7 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return String.format("%d %s", quantity, product.getName());
+        return String.format("%d %s", quantity, product);
     }
 
     public OrderItem(int quantity, Product product) {
