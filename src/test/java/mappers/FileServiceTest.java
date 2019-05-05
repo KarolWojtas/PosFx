@@ -1,12 +1,11 @@
 package mappers;
 
-import com.karol.enums.Category;
-import com.karol.enums.ProductId;
-import com.karol.model.Drink;
-import com.karol.model.Order;
-import com.karol.model.OrderItem;
-import com.karol.services.FileService;
-import com.karol.services.ProductService;
+import com.karol.posfx.enums.Category;
+import com.karol.posfx.enums.ProductId;
+import com.karol.posfx.model.Drink;
+import com.karol.posfx.model.Order;
+import com.karol.posfx.model.OrderItem;
+import com.karol.posfx.services.FileService;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;

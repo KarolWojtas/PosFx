@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<HBox fx:id="reportItemRoot" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" stylesheets="@../../styles/orderList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karol.controllers.ReportItemController">
+<HBox fx:id="reportItemRoot" alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" stylesheets="@../../styles/orderList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karol.posfx.controllers.ReportItemController">
    <children>
       <VBox alignment="BOTTOM_LEFT" HBox.hgrow="ALWAYS">
          <children>

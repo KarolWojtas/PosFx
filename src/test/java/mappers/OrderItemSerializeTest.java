@@ -1,8 +1,8 @@
 package mappers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.karol.enums.ProductId;
-import com.karol.model.dto.OrderItemDto;
+import com.karol.posfx.enums.ProductId;
+import com.karol.posfx.model.dto.OrderItemDto;
 import org.junit.Test;
 
 import java.nio.file.FileSystems;

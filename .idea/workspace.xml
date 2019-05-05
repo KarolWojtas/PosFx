@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ae5bae9-bea9-48b0-994e-866daf063760" name="Default Changelist" comment="" />
+    <list default="true" id="8ae5bae9-bea9-48b0-994e-866daf063760" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/karol/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/karol/controllers/CreateOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/karol/controllers/OrderListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/karol/interfaces/SceneNavigator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/karol/services/SceneNavigatorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/posfx-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/posfx-1.0-SNAPSHOT.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/posfx-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/posfx-1.0-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/posfx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/posfx-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/posfx" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/posfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/posfx.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/posfx.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/ActionStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ActionStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/CreateOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/CreateOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/MainCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/MainCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/MenuItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/MenuItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/OrderListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/OrderListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ReportItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/SpinnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/SpinnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/controllers/ToggleButtonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ToggleButtonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/ProductId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/ProductId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/Pungency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/Pungency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/SceneCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/SceneCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/enums/ThemeColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/ThemeColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/interfaces/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/interfaces/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/interfaces/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/interfaces/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/interfaces/OrderStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/interfaces/OrderStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/interfaces/SceneNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/interfaces/SceneNavigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/mappers/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/mappers/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/ZonedDateTimeDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/ZonedDateTimeSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/ProductControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/ProductControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/dto/EmptyProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/EmptyProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/model/dto/OrderItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/OrderItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/AbstractOrderStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/AbstractOrderStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/FileOrderStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/FileOrderStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/InMemoryOrderStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/InMemoryOrderStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/services/SceneNavigatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/services/SceneNavigatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeMenuComponentsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeMenuComponentsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeMenuTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeMenuTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeProductControlsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeProductControlsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/tasks/ReadOrdersTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/ReadOrdersTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/tasks/SaveOrderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/SaveOrderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/ActionStatusComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/ActionStatusComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/MenuCategoryComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/MenuCategoryComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/MenuItemComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/MenuItemComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/ReportComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/ReportComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/ReportItemComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/ReportItemComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/SpinnerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/SpinnerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/ToggleButtonComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/ToggleButtonComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderItemCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCellComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderItemCellComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderListCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCellComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderListCellComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/ProductControlListCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/ProductControlListCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/SummaryListCellComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/SummaryListCellComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/actionStatus.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/actionStatus.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/mainCategory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/mainCategory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/menuItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/menuItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/report.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/reportItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/reportItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/spinner.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/spinner.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/components/toggleButton.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/components/toggleButton.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/create_order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/create_order.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orderList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orderList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mappers/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mappers/FileServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mappers/OrderItemSerializeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mappers/OrderItemSerializeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mappers/OrderSerializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mappers/OrderSerializationTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -58,38 +157,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCellComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="37" column="81" selection-start-line="37" selection-start-column="81" selection-end-line="37" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCellComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/OrderListController.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -104,6 +176,7 @@
         <option value="FxmlFile" />
         <option value="Singleton" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -133,8 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/OrderListCellComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karol/enums/ThemeColors.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/components/orderItemCell.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCell.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCellComponent.java" />
@@ -150,9 +221,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/karol/model/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCell.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCellComponent.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/model/dto/OrderItemDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeSerializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeDeserializer.java" />
@@ -184,6 +253,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/styles/application.css" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/main_scene.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/karol/controllers/OrderListController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karol/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -197,104 +270,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="karol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="karol" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="posfx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PosFx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PosFx" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554752432590" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/images" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -330,14 +328,63 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileServiceTest.testSaveFile">
-    <configuration name="All in posfx.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="posfx.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.PosFx [jar]">
+    <configuration name="PosFx [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PosFx [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileTestJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PosFx [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="FileServiceTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="posfx.test" />
@@ -371,45 +418,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderItemSerializeTest.testSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="posfx.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mappers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mappers" />
-      <option name="MAIN_CLASS_NAME" value="mappers.OrderItemSerializeTest" />
-      <option name="METHOD_NAME" value="testSerialization" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderSerializationTest.testSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="posfx.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mappers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mappers" />
-      <option name="MAIN_CLASS_NAME" value="mappers.OrderSerializationTest" />
-      <option name="METHOD_NAME" value="testSerialization" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PosFx [jar]" />
+        <item itemvalue="Gradle.PosFx [compileTestJava]" />
+        <item itemvalue="Gradle.PosFx [compileJava]" />
         <item itemvalue="JUnit.FileServiceTest.testSaveFile" />
         <item itemvalue="JUnit.FileServiceTest.testReadFile" />
-        <item itemvalue="JUnit.OrderItemSerializeTest.testSerialization" />
-        <item itemvalue="JUnit.All in posfx.test" />
-        <item itemvalue="JUnit.OrderSerializationTest.testSerialization" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +526,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1910" height="1051" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19742489" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -520,15 +535,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.03236246" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2101293" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29126215" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="1804" y="1298" width="769" height="332" id="Terminal" order="8" sideWeight="0.49892125" visible="true" weight="0.22761597" />
+      <window_info active="true" anchor="bottom" x="1804" y="1298" width="769" height="332" id="Terminal" order="8" sideWeight="0.49892125" visible="true" weight="0.2273707" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010787" side_tool="true" weight="0.23218143" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.2892473" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.18446602" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -557,46 +572,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="added report mock layout" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/enums/ThemeColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="141" selection-start-line="13" selection-start-column="141" selection-end-line="13" selection-end-column="141" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/components/orderListCell.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ReportController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="44" column="145" selection-start-line="44" selection-start-column="145" selection-end-line="44" selection-end-column="145" />
@@ -606,7 +582,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/ReportItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ReportItemController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="41" column="165" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="41" selection-end-column="165" />
@@ -617,21 +593,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/circles.svg" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeDeserializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/ZonedDateTimeDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
@@ -641,7 +610,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/mappers/ZonedDateTimeSerializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/ZonedDateTimeSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
@@ -661,7 +630,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/dto/OrderItemDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/OrderItemDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
@@ -674,14 +643,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeProductControlsTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeProductControlsTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeMenuComponentsTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeMenuComponentsTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
@@ -698,21 +667,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/Drink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Drink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/tasks/InitializeMenuTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/InitializeMenuTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/tasks/SaveOrderTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/SaveOrderTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
@@ -726,7 +695,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/dto/OrderDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/OrderDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
@@ -736,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="67" selection-start-line="67" selection-end-line="67" />
@@ -746,14 +715,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/ProductNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/mappers/OrderItemMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/ProductNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/OrderItemMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
@@ -775,14 +738,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/OrderItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
@@ -801,7 +757,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/ProductService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="90" column="102" lean-forward="true" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
@@ -812,7 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/tasks/ReadOrdersTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/tasks/ReadOrdersTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -822,7 +778,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/mappers/OrderMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/mappers/OrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
@@ -834,14 +790,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/enums/Pungency.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/Pungency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/model/dto/EmptyProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/model/dto/EmptyProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
@@ -851,14 +807,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/enums/ProductId.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/ProductId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/AbstractOrderStoreService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/AbstractOrderStoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
@@ -870,7 +826,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/FileOrderStoreService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/FileOrderStoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -882,7 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/OrderService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
@@ -892,26 +848,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/ToggleButtonComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/ToggleButtonComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/ToggleButtonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/FileService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="711">
           <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
@@ -921,7 +865,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/services/InMemoryOrderStoreService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/services/InMemoryOrderStoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -931,7 +875,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/interfaces/OrderStoreService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/interfaces/OrderStoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
@@ -971,7 +915,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="125" selection-start-line="32" selection-start-column="125" selection-end-line="32" selection-end-column="125" />
@@ -981,9 +925,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderItemCellComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderItemCellComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="465">
           <caret line="37" column="81" selection-start-line="37" selection-start-column="81" selection-end-line="37" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -991,19 +935,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/ui/cells/OrderListCellComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderListCellComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="43" column="34" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="34" />
@@ -1013,13 +945,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/controllers/OrderListController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/OrderListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        <state relative-caret-position="435">
+          <caret line="79" column="11" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/OrderListCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/enums/ThemeColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/ui/cells/ProductControlListCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/controllers/ToggleButtonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#87#88#0" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karol/posfx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1061,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1080,7 +1078,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1088,7 +1085,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <last-edited>Gradle: com.fasterxml.jackson.core:jackson-annotations:2.0.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

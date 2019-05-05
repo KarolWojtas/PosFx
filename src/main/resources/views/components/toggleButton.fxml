@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 
-<HBox fx:id="toggleButtonRoot" alignment="CENTER" prefHeight="30.0" prefWidth="60.0" stylesheets="@../../styles/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karol.controllers.ToggleButtonController">
+<HBox fx:id="toggleButtonRoot" alignment="CENTER" prefHeight="30.0" prefWidth="60.0" stylesheets="@../../styles/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karol.posfx.controllers.ToggleButtonController">
    <children>
       <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
          <children>
