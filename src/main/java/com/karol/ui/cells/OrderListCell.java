@@ -10,6 +10,7 @@ public class OrderListCell extends ListCell<Order> {
 
     public OrderListCell(Color color) {
         this.color = color;
+        setMouseTransparent(true);
     }
 
     @Override
