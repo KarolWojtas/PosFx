@@ -14,7 +14,7 @@ set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and POSFX_OPTS to pass JVM options to this script.
-set DEFAULT_JVM_OPTS=
+set DEFAULT_JVM_OPTS="--add-modules" "javafx.controls,javafx.fxml" "--module-path" "%APP_HOME%\lib" "--module" "posfx.main/com.karol.posfx.Main"
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\posfx-1.0-SNAPSHOT.jar;%APP_HOME%\lib\rxjava-2.2.0.jar;%APP_HOME%\lib\jackson-databind-2.0.1.jar;%APP_HOME%\lib\javafx-fxml-12-linux.jar;%APP_HOME%\lib\javafx-controls-12-linux.jar;%APP_HOME%\lib\javafx-controls-12.jar;%APP_HOME%\lib\javafx-graphics-12-linux.jar;%APP_HOME%\lib\javafx-graphics-12-win.jar;%APP_HOME%\lib\javafx-graphics-12-mac.jar;%APP_HOME%\lib\javafx-graphics-12.jar;%APP_HOME%\lib\javafx-base-12-linux.jar;%APP_HOME%\lib\javafx-base-12.jar;%APP_HOME%\lib\reactive-streams-1.0.2.jar;%APP_HOME%\lib\jackson-annotations-2.0.1.jar;%APP_HOME%\lib\jackson-core-2.0.1.jar
+set CLASSPATH=
 
 @rem Execute posfx
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POSFX_OPTS%  -classpath "%CLASSPATH%" com.karol.posfx.Main %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POSFX_OPTS%  -classpath "%CLASSPATH%" posfx.main/com.karol.posfx.Main %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

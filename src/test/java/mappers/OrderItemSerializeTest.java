@@ -3,6 +3,7 @@ package mappers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.karol.posfx.enums.ProductId;
 import com.karol.posfx.model.dto.OrderItemDto;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.nio.file.FileSystems;
@@ -13,6 +14,7 @@ public class OrderItemSerializeTest {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Test
+    @Ignore
     public void testSerialization(){
         OrderItemDto item = new OrderItemDto();
         item.setProductId(ProductId.BEER);

@@ -6,7 +6,7 @@
     -fx-background-color: #eee;
 }
 #orderListView {
-    -fx-background-image: url('/images/wave-background.png');
+    -fx-background-image: url('../images/wave-background.png');
     -fx-background-position: bottom left;
     -fx-background-repeat: no-repeat;
     -fx-background-size: stretch;

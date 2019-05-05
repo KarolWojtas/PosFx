@@ -30,10 +30,6 @@ public class SceneNavigatorService implements SceneNavigator {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(code.getFxmlResourceUri()));
             Scene scene = new Scene(root, window.getScene().getWidth(), window.getScene().getHeight());
-            scene.getStylesheets().add(getClass().getResource("/styles/application.css").toString());
-            if(code.getCssResourceUri() != null){
-                scene.getStylesheets().add(getClass().getResource(code.getCssResourceUri()).toString());
-            }
             window.setScene(scene);
         } catch(IOException e){
             System.out.println("scene navigator error: " + e.getMessage());

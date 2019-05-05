@@ -53,4 +53,8 @@
          </children>
       </HBox>
    </children>
+   <stylesheets>
+      <URL value="@../styles/application.css" />
+      <URL value="@../styles/main_scene.css" />
+   </stylesheets>
 </VBox>
