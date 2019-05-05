@@ -6,10 +6,10 @@
     -fx-background-color: #eee;
 }
 #orderListView {
-    -fx-background-image: url('/images/boxes.png');
-    -fx-background-position: center;
-    -fx-background-repeat: repeat-x;
-    -fx-background-size: auto;
+    -fx-background-image: url('/images/wave-background.png');
+    -fx-background-position: bottom left;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
 }
 #orderCellRoot{
     -fx-background-color: rgba(0,0,0,0);

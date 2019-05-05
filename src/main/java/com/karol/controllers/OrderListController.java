@@ -78,6 +78,8 @@ public class OrderListController implements Controller {
             cell.setAlignment(Pos.CENTER);
             return cell;
         });
+        orderListView.setMouseTransparent( true );
+        orderListView.setFocusTraversable( false );
         orderListView.setItems(orders);
     }
 

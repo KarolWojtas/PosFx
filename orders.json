@@ -46,4 +46,31 @@
     "productId" : "TEA",
     "quantity" : 1
   } ]
+}, {
+  "id" : "f50e80c8-9e2d-4412-9038-3e2d2975b08b",
+  "orderer" : "Karolek",
+  "created" : "2019-05-05T15:58:18.848896+02:00[Europe/Warsaw]",
+  "totalPrice" : 27.0,
+  "products" : [ {
+    "productId" : "PASTA_BOLOGNESE",
+    "quantity" : 1
+  }, {
+    "productId" : "BEER",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "edcc073d-fa30-432e-a5ca-e5bac7a5f69d",
+  "orderer" : "Anonim",
+  "created" : "2019-05-05T17:11:12.415274+02:00[Europe/Warsaw]",
+  "totalPrice" : 102.0,
+  "products" : [ {
+    "productId" : "PASTA_BOLOGNESE",
+    "quantity" : 3
+  }, {
+    "productId" : "STEAK",
+    "quantity" : 1
+  }, {
+    "productId" : "TEA",
+    "quantity" : 1
+  } ]
 } ]
