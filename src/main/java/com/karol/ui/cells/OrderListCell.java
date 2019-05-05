@@ -2,9 +2,15 @@ package com.karol.ui.cells;
 
 import com.karol.model.Order;
 import javafx.scene.control.ListCell;
+import javafx.scene.paint.Color;
 
 public class OrderListCell extends ListCell<Order> {
     private OrderListCellComponent component = new OrderListCellComponent();
+    private Color color;
+
+    public OrderListCell(Color color) {
+        this.color = color;
+    }
 
     @Override
     protected void updateItem(Order item, boolean empty) {
@@ -13,6 +19,7 @@ public class OrderListCell extends ListCell<Order> {
             setGraphic(null);
         } else {
             component.setOrder(item);
+            component.setColor(color);
             setGraphic(component.getOrderCellRoot());
         }
     }

@@ -20,4 +20,7 @@ public class ReportItemComponent extends VBox implements Component {
     public void setThemeColor(ThemeColors color){
         controller.setThemeColor(color);
     }
+    public void setupItem(String name, String value, String description){
+        controller.setup(name, value, description);
+    }
 }

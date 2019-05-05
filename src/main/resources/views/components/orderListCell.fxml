@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
-
+<?import javafx.scene.text.Text?>
 
 <VBox fx:id="orderCellRoot" alignment="CENTER" stylesheets="@../../styles/orderList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -16,17 +17,20 @@
                <children>
                   <VBox fx:id="orderCellLeftInfoRoot" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label fx:id="orderCellCreatedLbl" maxWidth="1.7976931348623157E308" text="Label" />
                         <Label fx:id="orderCellOrdererLbl" text="Label" />
+                        <Label fx:id="orderCellCreatedLbl" maxWidth="1.7976931348623157E308" text="Label" textAlignment="RIGHT" />
                      </children>
                   </VBox>
                   <StackPane fx:id="orderCellPriceRoot" HBox.hgrow="ALWAYS">
                      <children>
                         <Circle fx:id="orderCellPriceCircle" fill="DODGERBLUE" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                        <Label fx:id="orderCellPriceLbl" text="Label" />
+                        <Text fx:id="orderCellPriceLbl" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                      </children>
                   </StackPane>
                </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
             </HBox>
             <ListView fx:id="orderCellProductsListView" />
          </children>

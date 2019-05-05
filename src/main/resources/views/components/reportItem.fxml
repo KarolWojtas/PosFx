@@ -15,7 +15,7 @@
          <children>
             <Label fx:id="reportItemNameLbl" maxWidth="1.7976931348623157E308" text="Rodzaj" textFill="WHITE">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" right="-50.0" />

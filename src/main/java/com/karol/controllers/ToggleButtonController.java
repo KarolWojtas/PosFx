@@ -24,7 +24,7 @@ public class ToggleButtonController implements Controller {
     private double translationValue = 20;
     private double transitionDuration = 200;
     private BooleanProperty state = new SimpleBooleanProperty(false);
-    private Color trueColor = Color.GREEN;
+    private Color trueColor = Color.rgb(9, 153, 9);
     private FillTransition toTrueFillTransition = new FillTransition(Duration.millis(transitionDuration));
     private FillTransition toFalseFillTransition = new FillTransition(Duration.millis(transitionDuration));
     @Override

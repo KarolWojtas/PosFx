@@ -1,14 +1,17 @@
 package com.karol.controllers;
 
+import com.karol.enums.ThemeColors;
 import com.karol.interfaces.Controller;
 import com.karol.enums.SceneCode;
 import com.karol.model.Order;
+import com.karol.model.Report;
 import com.karol.services.OrderService;
 import com.karol.services.SceneNavigatorService;
 import com.karol.ui.ReportComponent;
 import com.karol.ui.ToggleButtonComponent;
 import com.karol.ui.cells.OrderListCell;
 import com.karol.ui.SpinnerComponent;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -20,6 +23,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 
 public class OrderListController implements Controller {
 
@@ -30,9 +34,6 @@ public class OrderListController implements Controller {
     private HBox navRoot;
 
     private ToggleButtonComponent showReportBtn;
-
-    @FXML
-    private Region spreadRegion;
 
     @FXML
     private Button goToMainBtn;
@@ -55,6 +56,9 @@ public class OrderListController implements Controller {
     private ObservableList<Order> orders = FXCollections.observableArrayList();
     private String showReportSelectedText = "Ukryj raport";
     private String showReportDeselectedText = "Pokaż raport";
+    private ReportComponent reportComponent = new ReportComponent();
+    private double computedReportWidth = 400;
+    private int currentOrderListIndex = 0;
 
     @FXML
     public void initialize() {
@@ -64,12 +68,13 @@ public class OrderListController implements Controller {
         OrderService.getInstance().fetchOrders().subscribe(orders -> {
             this.orders.addAll(orders);
             contentRoot.toFront();
+            reportComponent.setReport(new Report(orders));
         });
     }
 
     private void initList() {
         orderListView.setCellFactory(param -> {
-            OrderListCell cell = new OrderListCell();
+            OrderListCell cell = new OrderListCell(getCurrentColor());
             cell.setAlignment(Pos.CENTER);
             return cell;
         });
@@ -79,7 +84,6 @@ public class OrderListController implements Controller {
     private void initComponents() {
         SpinnerComponent spinner = new SpinnerComponent("zapisywanie");
         stackPane.getChildren().add(spinner);
-        ReportComponent reportComponent = new ReportComponent();
         reportPane.getChildren().add(reportComponent);
 
         showReportBtn = new ToggleButtonComponent();
@@ -99,14 +103,21 @@ public class OrderListController implements Controller {
         }
         showReportBtn.selectedProperty().addListener((obs, oldVal, newVal) -> {
             if (newVal) {
-                reportPane.prefWidthProperty().bind(stackPane.widthProperty().multiply(0.25));
+                reportPane.setPrefWidth(computedReportWidth);
                 showReportLabel.setText(showReportSelectedText);
             } else {
-                reportPane.prefWidthProperty().unbind();
                 reportPane.setPrefWidth(0);
                 showReportLabel.setText(showReportDeselectedText);
             }
         });
         spinner.toFront();
+    }
+    private Color getCurrentColor(){
+        if(currentOrderListIndex >= ThemeColors.values().length){
+            currentOrderListIndex = 0;
+        }
+        Color color = ThemeColors.values()[currentOrderListIndex].getColor();
+        currentOrderListIndex++;
+        return color;
     }
 }

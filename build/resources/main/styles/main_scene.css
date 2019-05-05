@@ -28,9 +28,12 @@
     -fx-opacity: 0.7;
 }
 #mainUsernameInput{
-    -fx-background-color: #666;
-    -fx-text-fill: white;
+    -fx-background-color: linear-Gradient(to bottom, #ccc, #fff);
+    -fx-text-fill: black;
     -fx-font-size: 15;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
 }
 
 

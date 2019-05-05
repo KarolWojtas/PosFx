@@ -4,31 +4,38 @@ import java.util.List;
 
 public class Report {
     private double totalIncome;
-    private double totalVolumeOfDrinks;
+    private float totalVolumeOfDrinks;
     private List<Order> orders;
 
     public Report(List<Order> orders){
         this.orders = orders;
+        if(orders.size() > 0){
+            calculateReport();
+        }
     }
     public double getTotalIncome() {
         return totalIncome;
-    }
-
-    public void setTotalIncome(double totalIncome) {
-        this.totalIncome = totalIncome;
     }
 
     public double getTotalVolumeOfDrinks() {
         return totalVolumeOfDrinks;
     }
 
-    public void setTotalVolumeOfDrinks(double totalVolumeOfDrinks) {
-        this.totalVolumeOfDrinks = totalVolumeOfDrinks;
+    private void calculateReport(){
+        orders.forEach(order -> {
+            calcTotalIncome(order);
+            calcTotalVolumeOfDrinks(order);
+        });
     }
-    public void addToTotalPrice(double price){
-        totalIncome += price;
+
+    private void calcTotalIncome(Order order){
+        totalIncome += order.getTotalPrice();
     }
-    public void addToTotalVolumeOfDrinks(double volumeInLiters){
-        totalVolumeOfDrinks += volumeInLiters;
+
+    private void calcTotalVolumeOfDrinks(Order order){
+        totalVolumeOfDrinks += order.getProducts().stream()
+                .filter(orderItem -> orderItem.getProduct() instanceof Drink)
+                .map(orderItem -> ((Drink) orderItem.getProduct()).getVolumeLiters())
+                .reduce(0f, Float::sum);
     }
 }

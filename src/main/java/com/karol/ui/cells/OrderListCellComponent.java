@@ -8,13 +8,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-
+import javafx.scene.text.Text;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 
 public class OrderListCellComponent {
@@ -43,7 +41,7 @@ public class OrderListCellComponent {
     private Circle orderCellPriceCircle;
 
     @FXML
-    private Label orderCellPriceLbl;
+    private Text orderCellPriceLbl;
 
     @FXML
     private ListView<OrderItem> orderCellProductsListView;
@@ -75,6 +73,12 @@ public class OrderListCellComponent {
         orderCellPriceLbl.setText(String.valueOf(order.getTotalPrice()));
         orderItems.addAll(order.getProducts());
         this.order = order;
+    }
+
+    public void setColor(Color color){
+        orderCellPriceCircle.setFill(color);
+        orderCellContentRoot.setStyle(String.format("-fx-border-color: rgb(%d%%, %d%%,%d%%);",
+                (int) Math.floor(color.getRed()*100),(int) Math.floor(color.getGreen()*100),(int) Math.floor(color.getBlue()*100)));
     }
 
     public VBox getOrderCellRoot() {

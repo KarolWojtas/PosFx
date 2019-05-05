@@ -3,12 +3,12 @@ package com.karol.services;
 import com.karol.interfaces.OrderStoreService;
 import com.karol.model.Order;
 import javafx.concurrent.Task;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 
 public class InMemoryOrderStoreService implements OrderStoreService {
 
@@ -39,7 +39,7 @@ public class InMemoryOrderStoreService implements OrderStoreService {
             @Override
             protected List<Order> call() throws Exception {
                 Thread.sleep(1000);
-                return orders;
+                return orders.stream().sorted((o1, o2) -> o1.getCreated().isBefore(o2.getCreated()) ? 1 : -1).collect(Collectors.toList());
             }
         };
         ExecutorService executorService = Executors.newSingleThreadExecutor();

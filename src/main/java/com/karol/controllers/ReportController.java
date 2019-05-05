@@ -2,6 +2,7 @@ package com.karol.controllers;
 
 import com.karol.enums.ThemeColors;
 import com.karol.interfaces.Controller;
+import com.karol.model.Report;
 import com.karol.ui.ReportItemComponent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ScrollPane;
@@ -17,10 +18,12 @@ public class ReportController implements Controller {
 
     private int currentColorIndex = 0;
 
+    private ReportItemComponent totalIncomeReportItem;
+    private ReportItemComponent totalVolumeOfDrinksReportItem;
     @Override
     public void initialize() {
-        ReportItemComponent totalIncomeReportItem = new ReportItemComponent();
-        ReportItemComponent totalVolumeOfDrinksReportItem = new ReportItemComponent();
+        totalIncomeReportItem = new ReportItemComponent();
+        totalVolumeOfDrinksReportItem = new ReportItemComponent();
         ReportItemComponent[] reportItems = {totalIncomeReportItem, totalVolumeOfDrinksReportItem};
         colorReportItems(reportItems);
         reportContentRoot.getChildren().addAll(reportItems);
@@ -37,4 +40,8 @@ public class ReportController implements Controller {
         }
     }
 
+    public void setReport(Report report) {
+        this.totalIncomeReportItem.setupItem("Suma cen zamównień", String.format("%.2f", report.getTotalIncome()), "zł");
+        this.totalVolumeOfDrinksReportItem.setupItem("Łączna pojemność napojów", String.format("%.2f", report.getTotalVolumeOfDrinks()), "litr");
+    }
 }
