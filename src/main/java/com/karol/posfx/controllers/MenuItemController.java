@@ -43,7 +43,7 @@ public class MenuItemController implements Controller {
     @Override
     public void initialize() {
         quantityLbl.textProperty().bind(productControl.quantityProperty().asString());
-        titleLbl.setText(productControl.getProduct().getName());
+        titleLbl.setText(productControl.getProduct().getName().toUpperCase());
 
         root.getStyleClass().add("menuItemRoot");
         increaseBtn.getStyleClass().addAll("menuItemAction", "menuItemIncreaseBtn");

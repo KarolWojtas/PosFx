@@ -34,6 +34,7 @@ public class FileService {
             try(InputStream is = Files.newInputStream(filePath)){
                 CollectionType orderListType = objectMapper.getTypeFactory().constructCollectionType(List.class, OrderDto.class);
                 orderDtos = objectMapper.readValue(is, orderListType);
+                Thread.sleep(300);
             }
             catch (Exception e){
                 System.out.println(e);
@@ -53,7 +54,7 @@ public class FileService {
             try {
                 Files.createFile(filePath);
             } catch(Exception e){
-                System.out.println("Create file if not exists: "+e.getMessage());
+                System.out.println("Create file if !exists: "+e.getMessage());
             }
         }
         try (FileOutputStream os = new FileOutputStream(filePath.toFile(), false)){
