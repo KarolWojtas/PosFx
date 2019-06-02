@@ -73,4 +73,16 @@
     "productId" : "TEA",
     "quantity" : 1
   } ]
+}, {
+  "id" : "b9b04ade-7754-4be6-be3a-e0b4b5f516d8",
+  "orderer" : "Anonim",
+  "created" : "2019-06-02T17:45:56.5254529+02:00[Europe/Belgrade]",
+  "totalPrice" : 32.0,
+  "products" : [ {
+    "productId" : "MUSHROOM_RISOTTO",
+    "quantity" : 1
+  }, {
+    "productId" : "ORANGE_JUICE",
+    "quantity" : 1
+  } ]
 } ]
