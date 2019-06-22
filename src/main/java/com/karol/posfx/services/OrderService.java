@@ -27,8 +27,6 @@ public class OrderService {
         return ourInstance;
     }
 
-    //TODO dodać przełączanie między usługami AWS / RAM
-
     private OrderService() {
         useFileOrderServiceProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue){

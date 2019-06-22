@@ -73,4 +73,64 @@
     "productId" : "TEA",
     "quantity" : 1
   } ]
+}, {
+  "id" : "deb668fa-e665-42df-855c-b3e4e6fad219",
+  "orderer" : "Anonim",
+  "created" : "2019-06-08T15:53:04.840521+02:00[Europe/Warsaw]",
+  "totalPrice" : 86.5,
+  "products" : [ {
+    "productId" : "STEAK",
+    "quantity" : 1
+  }, {
+    "productId" : "MUSHROOM_RISOTTO",
+    "quantity" : 1
+  }, {
+    "productId" : "PASTA_BOLOGNESE",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "d946c1be-3bd0-4e4a-bd88-5bf9b1c30f42",
+  "orderer" : "Anonim",
+  "created" : "2019-06-08T16:27:08.464623+02:00[Europe/Warsaw]",
+  "totalPrice" : 7.0,
+  "products" : [ {
+    "productId" : "WHITE_WINE",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "ad64f647-6932-4db1-bf9b-ca07dfb10668",
+  "orderer" : "Anonim",
+  "created" : "2019-06-08T16:27:59.607803+02:00[Europe/Warsaw]",
+  "totalPrice" : 28.0,
+  "products" : [ {
+    "productId" : "WHITE_WINE",
+    "quantity" : 4
+  } ]
+}, {
+  "id" : "ea41a0f8-7966-40fb-a2e1-d85e011e7308",
+  "orderer" : "Anonim",
+  "created" : "2019-06-08T16:50:17.298702+02:00[Europe/Warsaw]",
+  "totalPrice" : 45.0,
+  "products" : [ {
+    "productId" : "TEA",
+    "quantity" : 1
+  }, {
+    "productId" : "STEAK",
+    "quantity" : 1
+  } ]
+}, {
+  "id" : "b5345d52-7521-4dc2-8d59-5d0c38d11232",
+  "orderer" : "Karolek",
+  "created" : "2019-06-08T16:50:39.859907+02:00[Europe/Warsaw]",
+  "totalPrice" : 80.5,
+  "products" : [ {
+    "productId" : "WHITE_WINE",
+    "quantity" : 3
+  }, {
+    "productId" : "MUSHROOM_RISOTTO",
+    "quantity" : 2
+  }, {
+    "productId" : "ORANGE_JUICE",
+    "quantity" : 1
+  } ]
 } ]

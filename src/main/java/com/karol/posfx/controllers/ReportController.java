@@ -20,11 +20,13 @@ public class ReportController implements Controller {
 
     private ReportItemComponent totalIncomeReportItem;
     private ReportItemComponent totalVolumeOfDrinksReportItem;
+    private ReportItemComponent dishWeightInKilos;
     @Override
     public void initialize() {
         totalIncomeReportItem = new ReportItemComponent();
         totalVolumeOfDrinksReportItem = new ReportItemComponent();
-        ReportItemComponent[] reportItems = {totalIncomeReportItem, totalVolumeOfDrinksReportItem};
+        dishWeightInKilos = new ReportItemComponent();
+        ReportItemComponent[] reportItems = {totalIncomeReportItem, totalVolumeOfDrinksReportItem, dishWeightInKilos};
         colorReportItems(reportItems);
         reportContentRoot.getChildren().addAll(reportItems);
     }
@@ -43,5 +45,6 @@ public class ReportController implements Controller {
     public void setReport(Report report) {
         this.totalIncomeReportItem.setupItem("Suma cen zamównień", String.format("%.2f", report.getTotalIncome()), "zł");
         this.totalVolumeOfDrinksReportItem.setupItem("Łączna pojemność napojów", String.format("%.2f", report.getTotalVolumeOfDrinks()), "litr");
+        this.dishWeightInKilos.setupItem("Łączna waga dań", String.format("%.3f", report.getDishWeightInKilos()), "kg");
     }
 }

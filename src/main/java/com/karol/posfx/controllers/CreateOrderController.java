@@ -155,5 +155,4 @@ public class CreateOrderController implements Controller {
         actionStatusComponent.getConfirmButton().pseudoClassStateChanged(Action.ORDER_SAVE_SUCCESS.getPseudoClass(), false);
         error.printStackTrace();
     }
-
 }

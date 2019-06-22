@@ -14,7 +14,6 @@ public class SceneNavigatorService implements SceneNavigator {
     private static SceneNavigatorService ourInstance = new SceneNavigatorService();
     private Stage window;
     public static SceneNavigatorService getInstance() {
-
         return ourInstance;
     }
 
@@ -28,7 +27,8 @@ public class SceneNavigatorService implements SceneNavigator {
     @Override
     public void go(SceneCode code) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(code.getFxmlResourceUri()));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(code.getFxmlResourceUri()));
+            Parent root = loader.load();
             Scene scene = new Scene(root, window.getScene().getWidth(), window.getScene().getHeight());
             window.setScene(scene);
         } catch(IOException e){

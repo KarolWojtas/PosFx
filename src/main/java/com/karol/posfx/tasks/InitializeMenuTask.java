@@ -49,9 +49,12 @@ public class InitializeMenuTask extends Task<List<Product>> {
         Dish steak = new Dish.Builder().productId(ProductId.STEAK).pungency(Pungency.MEDIUM)
                 .weightGrams(400).category(Category.MAIN_COURSE).price(40)
                 .build();
-        Dish mushroomRIsotto = new Dish.Builder().productId(ProductId.MUSHROOM_RISOTTO).pungency(Pungency.MILD)
+        Dish mushroomRisotto = new Dish.Builder().productId(ProductId.MUSHROOM_RISOTTO).pungency(Pungency.MILD)
                 .weightGrams(300).category(Category.MAIN_COURSE).price(27.5f)
                 .build();
-        return new Dish[]{spaghetti, steak, mushroomRIsotto};
+        Dish padThai = new Dish.Builder().productId(ProductId.PAD_THAI).pungency(Pungency.HOT)
+                .weightGrams(270).category(Category.MAIN_COURSE).price(22f)
+                .build();
+        return new Dish[]{spaghetti, steak, mushroomRisotto, padThai};
     }
 }

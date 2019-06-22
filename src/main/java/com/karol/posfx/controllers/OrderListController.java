@@ -51,6 +51,7 @@ public class OrderListController implements Controller {
     @FXML
     private ListView<Order> orderListView;
 
+    private SpinnerComponent spinner = new SpinnerComponent("zapisywanie");
     private ObservableList<Order> orders = FXCollections.observableArrayList();
     private String showReportSelectedText = "Ukryj raport";
     private String showReportDeselectedText = "Pokaż raport";
@@ -80,7 +81,6 @@ public class OrderListController implements Controller {
     }
 
     private void initComponents() {
-        SpinnerComponent spinner = new SpinnerComponent("zapisywanie");
         stackPane.getChildren().add(spinner);
         reportPane.getChildren().add(reportComponent);
 
